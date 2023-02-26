@@ -26,7 +26,7 @@ Feature: ilk feature file
   #4- verification yapacagimizda Then kullanmaliyiz
   #5- Her bir adim Given, Then, When, And, But,*  kelimelerinden biriyle baslamalidir
   #6- Given -> Genelde ilk satirlarda pre condition stepleri icin kullanilir
-  #7- Then -> Genelde son satirlarda, verification sstepleri icin kullanilir
+  #7- Then -> Genelde son satirlarda, verification stepleri icin kullanilir
   #8- And ve When kelimeleri ara adimlarda baglac olarak kullanilir
   #NOT: Teknik olarak istenilen kelime istenilen yerde kullanilabilir,ama anlam karmasasi
   #olmamasi icin bu adimlar takip edilir.
@@ -34,3 +34,6 @@ Feature: ilk feature file
 #  9. Belirli Scenario lari calistirmak icin cucumber tags ler kullanilir
 #  tag ler Fetuature, Scenario, Scerio Outline, Examples kelimeleri ile birlikte kullanilabilir
 #  10. Background: Her bir Scenario kelimesinden ONCE tek bir sefer calisir
+  #11- dryRun=false-> dryRun yokmus gibi calisir.Yani tum adimlari tek tek browserda acar
+  #    dryRun=true -> Yeni stepeklendiginde sadece tanimlanmamis step definitionslari olusturmak icin kullanilir
+  #   Bunu  kullanilma sebebi zamandan tasarruftur.
