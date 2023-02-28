@@ -12,7 +12,7 @@ public class ConfigReader {
 //            Opening the file
             FileInputStream file = new FileInputStream(path);
 //            loading the file
-            properties= new Properties();
+            properties= new Properties();// objeyi oluşturup değer atarız
             properties.load(file);
 //            closing the file
             file.close();
@@ -24,4 +24,9 @@ public class ConfigReader {
     public static String getProperty(String key){
         return properties.getProperty(key);
     }
+     /*
+            test method'undan yolladigimiz string key degerini alip
+        Properties class'indan getProperty() method'unu kullanarak
+        bu key'e ait value'u bize getirdi
+         */
 }
