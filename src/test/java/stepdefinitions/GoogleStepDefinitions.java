@@ -20,11 +20,11 @@ public class GoogleStepDefinitions {
 
         Driver.getDriver().get(ConfigReader.getProperty("google_url"));
 
-        //        CEREZ CIKAN ARKADARLAR ICIN, CEREZI OKEYLEYELIM
-        //  try {
-        //      googlePage.popUpAccept.click();
-        //  } catch (Exception e) {
-        //  }
+           //   CEREZ CIKAN ARKADARLAR ICIN, CEREZI OKEYLEYELIM
+         try {
+             googlePage.popUpAccept.click();
+          } catch (Exception e) {
+         }
     }
 
 
