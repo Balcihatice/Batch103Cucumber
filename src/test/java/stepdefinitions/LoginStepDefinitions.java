@@ -22,8 +22,8 @@ public class LoginStepDefinitions {
         List<Map<String,String>> musteriBilgisi = dataTable.asMaps(String.class,String.class);
         System.out.println(musteriBilgisi);
         for (Map<String ,String > musteri : musteriBilgisi){
-            loginPage.emailField.sendKeys(musteri.get("email"));
-            loginPage.passwordField.sendKeys(musteri.get("sifre"));
+            loginPage.email.sendKeys(musteri.get("email"));
+            loginPage.password.sendKeys(musteri.get("sifre"));
             loginPage.loginSubmitButton.click();
         }
     }

@@ -13,10 +13,10 @@ public class LoginPage {
     public WebElement loginButton;
 
     @FindBy(id = "formBasicEmail")
-    public WebElement emailField;
+    public WebElement email;
 
     @FindBy(id = "formBasicPassword")
-    public WebElement passwordField;
+    public WebElement password;
 
     @FindBy(xpath = "//button[@type='submit']")
     public WebElement loginSubmitButton;
