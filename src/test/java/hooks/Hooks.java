@@ -17,10 +17,10 @@ public class Hooks {
     Eger @Test deseydim jUnitten kullanirdim ama @Test anatosyonunu
     kullanmayacagim icin Cucumberdan kullanacagiz
      */
-    @Before
-    public void setUpScenario() {
-        System.out.println("Before Methodu");
-    }
+//    @Before
+//    public void setUpScenario() {
+//        System.out.println("Before Methodu");
+//    }
 
     @After
     public void tearDownScenario(Scenario scenario) {

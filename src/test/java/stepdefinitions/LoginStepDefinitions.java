@@ -8,6 +8,8 @@ import java.util.Map;
 
 public class LoginStepDefinitions {
 
+    //day05 dataTables icin yazalim
+
     @When("kullanici emaili ve sifresini girer")
     public void kullanici_emaili_ve_sifresini_girer(io.cucumber.datatable.DataTable dataTable) {
         LoginPage loginPage = new LoginPage();
@@ -18,6 +20,7 @@ public class LoginStepDefinitions {
 //        loginPage.email.sendKeys(musteriBilgisi.get(0));
 //        loginPage.password.sendKeys(musteriBilgisi.get(1));
 //        loginPage.login.click();
+
 //2.   Datatable da datalari List<Map<String,String>> de depolayabiliriz
         List<Map<String,String>> musteriBilgisi = dataTable.asMaps(String.class,String.class);
         System.out.println(musteriBilgisi);
